@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-22T20:25:57 NZST" name="Suite" finished-at="2023-04-22T20:26:34 NZST" duration-ms="36430">
+  <suite started-at="2023-05-10T18:59:36 NZST" name="Suite" finished-at="2023-05-10T19:00:35 NZST" duration-ms="59137">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-22T20:25:57 NZST" name="Test" finished-at="2023-04-22T20:26:34 NZST" duration-ms="36430">
+    <test started-at="2023-05-10T18:59:36 NZST" name="Test" finished-at="2023-05-10T19:00:35 NZST" duration-ms="59137">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:25:57 NZST" name="beforeSuite" finished-at="2023-04-22T20:25:57 NZST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T18:59:36 NZST" name="beforeSuite" finished-at="2023-05-10T18:59:36 NZST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:25:57 NZST" name="setUpClass" finished-at="2023-04-22T20:25:58 NZST" duration-ms="625" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T18:59:36 NZST" name="setUpClass" finished-at="2023-05-10T18:59:37 NZST" duration-ms="488" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,103 +25,151 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:25:58 NZST" name="initiate" finished-at="2023-04-22T20:26:01 NZST" duration-ms="3295" status="PASS">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T18:59:37 NZST" name="initiate" finished-at="2023-05-10T18:59:40 NZST" duration-ms="3366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:01 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-22T20:26:19 NZST" duration-ms="17782" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T18:59:40 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-10T18:59:50 NZST" duration-ms="10187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Login Functionality"]]>
+                <![CDATA["Verify Add to Cart is working for a perticular item"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify shopify website Login related functionalities"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //h2[.='Account details'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\mishr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54383/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cf015e05129257051149a31b340e4738]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //h2[.='Account details'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\mishr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54383/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cf015e05129257051149a31b340e4738
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at pages.loginPage.loginShopifyWebsite(loginPage.java:32)
-at steps.loginSteps.i_search_by_text(loginSteps.java:31)
-at ✽.I login to shopify website(file:///C:/ShopifyAutomateProject/selenium-cucumber-app/src/test/resources/features/loginFunctionality.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:19 NZST" name="drawDown" finished-at="2023-04-22T20:26:19 NZST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- drawDown -->
-        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:19 NZST" name="initiate" finished-at="2023-04-22T20:26:20 NZST" duration-ms="1308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiate -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:20 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-22T20:26:26 NZST" duration-ms="5678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Search functionalty"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify shopify website functionalities"]]>
+                <![CDATA["Verify shopify website Add To Cart related functionalities"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:26 NZST" name="drawDown" finished-at="2023-04-22T20:26:26 NZST" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T18:59:50 NZST" name="drawDown" finished-at="2023-05-10T18:59:50 NZST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- drawDown -->
-        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:26 NZST" name="initiate" finished-at="2023-04-22T20:26:27 NZST" duration-ms="1285" status="PASS">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T18:59:50 NZST" name="initiate" finished-at="2023-05-10T18:59:52 NZST" duration-ms="1730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:27 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-22T20:26:33 NZST" duration-ms="5565" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T18:59:52 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-10T19:00:01 NZST" duration-ms="9432" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Search functionalty"]]>
+                <![CDATA["Verify Add to Cart is working for a perticular item"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Verify shopify website functionalities"]]>
+                <![CDATA["Verify shopify website Add To Cart related functionalities"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:33 NZST" name="drawDown" finished-at="2023-04-22T20:26:33 NZST" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:01 NZST" name="drawDown" finished-at="2023-05-10T19:00:02 NZST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- drawDown -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-04-22T20:26:33 NZST" name="tearDownClass" finished-at="2023-04-22T20:26:34 NZST" duration-ms="473" status="PASS">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:02 NZST" name="initiate" finished-at="2023-05-10T19:00:03 NZST" duration-ms="1434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:03 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-10T19:00:13 NZST" duration-ms="10179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Add to Cart is working for a perticular item"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify shopify website Add To Cart related functionalities"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:13 NZST" name="drawDown" finished-at="2023-05-10T19:00:13 NZST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawDown -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:13 NZST" name="initiate" finished-at="2023-05-10T19:00:15 NZST" duration-ms="1355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:15 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-10T19:00:21 NZST" duration-ms="5881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search functionalty should be working for correct search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify shopify Search functionalities"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:21 NZST" name="drawDown" finished-at="2023-05-10T19:00:21 NZST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawDown -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:21 NZST" name="initiate" finished-at="2023-05-10T19:00:22 NZST" duration-ms="1329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:22 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-10T19:00:28 NZST" duration-ms="5908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search functionalty should be working for correct search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify shopify Search functionalities"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:28 NZST" name="drawDown" finished-at="2023-05-10T19:00:28 NZST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawDown -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:28 NZST" name="initiate" finished-at="2023-05-10T19:00:29 NZST" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:29 NZST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-10T19:00:35 NZST" duration-ms="5316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Search functionalty for invalid search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify shopify Search functionalities"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="drawDown()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:35 NZST" name="drawDown" finished-at="2023-05-10T19:00:35 NZST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@13330ac6]" started-at="2023-05-10T19:00:35 NZST" name="tearDownClass" finished-at="2023-05-10T19:00:35 NZST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -23,6 +23,7 @@ public class homePage {
 	private By searchInputField = By.xpath("//input[@id='Search-In-Modal']");
 	private By searchSubmit = By.xpath("//button[@class='search__button field__button']");
 	private By searchHeader = By.xpath("//h1[contains(.,'Search results')]");
+	private By notFoundText = By.xpath("//p[contains(.,'No results found for ')]");
 	
 	
 	
@@ -48,6 +49,31 @@ public class homePage {
 		driver.findElement(searchSubmit).click();
 		WebElement headerLogo = new WebDriverWait(driver, Duration.ofSeconds(10))
 		        .until(ExpectedConditions.elementToBeClickable(searchHeader));
+		
+	}
+	
+	public void invalidSearchOption(WebDriver driver, String searchInput) {
+		this.driver = driver;
+		driver.findElement(searchButton).click();
+		//WebElement motorlinkElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+		        //.until(ExpectedConditions.elementToBeClickable(searchSubmit));
+		driver.findElement(searchInputField).sendKeys(searchInput);
+		driver.findElement(searchSubmit).click();
+		WebElement invalidSearchParagraph = new WebDriverWait(driver, Duration.ofSeconds(10))
+		        .until(ExpectedConditions.elementToBeClickable(notFoundText));
+		
+	}
+	
+	public void searchAndOpenItems(WebDriver driver, String searchInput) {
+		this.driver = driver;
+		driver.findElement(searchButton).click();
+		//WebElement motorlinkElement = new WebDriverWait(driver, Duration.ofSeconds(10))
+		        //.until(ExpectedConditions.elementToBeClickable(searchSubmit));
+		driver.findElement(searchInputField).sendKeys(searchInput);
+		driver.findElement(searchSubmit).click();
+		WebElement headerLogo = new WebDriverWait(driver, Duration.ofSeconds(10))
+		        .until(ExpectedConditions.elementToBeClickable(searchHeader));
+		driver.findElement(By.xpath("(//a[contains(.,'"+searchInput+"')])[2]")).click();
 		
 	}
 	
